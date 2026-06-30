@@ -2,12 +2,12 @@
 
 ## For everyone — git basics
 
-If you haven't used git before, install [GitHub Desktop](https://desktop.github.com).
+If you haven't used git before, install [GitHub Desktop](https://desktop.github.com) or [Fork]{https://git-fork.com/}.
 It handles everything below without touching a terminal.
 
 The one rule that matters: **commit small, commit often, with a clear message.**
 "Add broken arm ailment scene" is good. "stuff" is not. A week of work in one commit
-is painful to review and impossible to roll back cleanly.
+is painful to review and impossible to roll back cleanly. The more detailed the better.
 
 ### Branch naming
 
@@ -22,8 +22,7 @@ art/billboard-textures
 
 ## For programmers
 
-We use Godot 4 with GDScript. Scenes are text-serialized (`.tscn`) — make sure your
-editor settings match what's in the README before you commit a scene.
+We use Godot 4 with GDScript.
 
 Core systems (proc-gen streets, traffic, multiplayer) live in `src/systems/`.
 Don't refactor other people's systems without talking first.
@@ -32,7 +31,7 @@ Performance-sensitive code gets a comment explaining why it's written the way it
 
 ---
 
-## Adding ailments and events (main non-programmer contribution path)
+## Adding ailments and events
 
 Ailments and events are self-contained Godot scenes. You don't need to touch any core
 systems to add one. The pattern is:
@@ -46,7 +45,7 @@ res://ailments/
     ...
 ```
 
-### BaseAilment interface
+### BaseAilment interface WIP
 
 Your ailment script extends `BaseAilment` and implements:
 
@@ -81,6 +80,5 @@ Same pattern, extend `BaseEvent`, lives in `res://events/`.
 ## What not to do
 
 - Don't commit the `assets/` directory or anything from it
-- Don't commit `.godot/` (it's gitignored but worth knowing)
 - Don't push directly to `main`
 - Don't merge your own PR without a second pair of eyes
