@@ -1,35 +1,3 @@
-# Godot 4 generated files
+# Godot 4+ specific ignores
 .godot/
-*.translation
-
-# Godot export templates and builds
-/build/
-/exports/
-
-# Import cache (regenerated locally)
-.import/
-*.import
-
-# Mono / C# (if ever added)
-.mono/
-data_*/
-
-# Assets live in the private repo (game-assets)
-# Mount or clone game-assets and symlink/copy to this path
-assets/
-
-# OS cruft
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# Editor config that shouldn't be shared
-*.swp
-*.swo
-*~
-.vscode/
-.idea/
-
-# Local env overrides
-.env
-.env.local
+/android/

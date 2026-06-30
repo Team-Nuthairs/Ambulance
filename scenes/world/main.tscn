@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://main_scene_placeholder"]
+
+[sub_resource type="GDScript" id="1"]
+script/source = "extends Node2D
+
+func _ready() -> void:
+	print(\"Ambulance Game booted. Replace this scene.\")
+"
+
+[node name="Main" type="Node2D"]
+script = SubResource("1")
