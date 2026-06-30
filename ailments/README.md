@@ -1,4 +1,5 @@
 # Ailments
+## All files here are examples
 
 Each ailment is a self-contained folder:
 
