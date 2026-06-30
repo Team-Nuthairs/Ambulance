@@ -1,6 +1,7 @@
 # [Game Name TBD]
+## TN Code Name: Ambulance
 
-A co-op friendslop game where you and up to 2 friends run a private for-profit ambulance
+A co-op friendslop game where you and your friends run a private for-profit ambulance
 company in a capitalist hellscape. Accept jobs off a DoorDash-style app, drive through
 procedurally generated streets, stabilize patients in the back of a moving ambulance, and
 charge their credit card at the end. If it declines, that's a different problem.
@@ -43,25 +44,15 @@ assets/         NOT TRACKED — clone game-assets here (see below)
 ### Clone and set up
 
 ```fish
-git clone https://github.com/[org]/[repo-name].git
+git clone https://github.com/Team-Nuthairs/Ambulance.git
 cd [repo-name]
 
 # Clone assets into place
-git clone https://github.com/[org]/game-assets.git assets
+git clone https://github.com/Team-Nuthairs/Ambulance-assets.git assets
 ```
 
 Open the project in Godot. The editor will re-import assets on first load — this is normal
 and takes a minute.
-
-### Godot project settings
-
-Before committing any scenes, make sure your editor is set to serialize scenes and resources
-as text:
-
-`Editor > Editor Settings > File Saving > Text Resource Modes` — set to **Text**
-
-This makes `.tscn` and `.tres` files human-readable and mergeable. Binary scenes produce
-unsolvable merge conflicts.
 
 ---
 
@@ -80,7 +71,7 @@ fix/xyz       bug fixes
 3. Open a pull request to merge back to main
 4. Someone else reviews before it merges (even just a quick look)
 
-New to git? Use GitHub Desktop — it handles everything here without the command line.
+New to git? Use GitHub Desktop or Fork — it handles everything here without the command line.
 
 ---
 
@@ -88,14 +79,6 @@ New to git? Use GitHub Desktop — it handles everything here without the comman
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow, branch naming conventions,
 and how to add new ailments and events (the main contribution path for non-programmers).
-
----
-
-## Team
-
-| Name | Role |
-|------|------|
-| TBD | |
 
 ---
 
