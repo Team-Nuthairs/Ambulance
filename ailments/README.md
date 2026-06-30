@@ -5,8 +5,8 @@ Each ailment is a self-contained folder:
 ```
 ailments/
   broken_arm/
-    broken_arm.tscn
-    broken_arm.gd       <- extends BaseAilment
+	broken_arm.tscn
+	broken_arm.gd       <- extends BaseAilment
 ```
 
 `BaseAilment` lives in `res://scripts/systems/base_ailment.gd`. Extend it, fill in

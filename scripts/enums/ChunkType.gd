@@ -1,0 +1,4 @@
+class_name ChunkType 
+enum {
+	UNSET, CULDESAC, STRAIGHT, TURN, THREEWAY, FOURWAY, DOUBLE_THREEWAY,
+}

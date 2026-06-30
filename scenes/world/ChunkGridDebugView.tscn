@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b35e3edqv7ky"]
+
+[ext_resource type="Script" uid="uid://sgowkb550ngj" path="res://scripts/systems/chunk_view.gd" id="1_36ov2"]
+
+[node name="ChunkGridDebugView" type="Node2D" unique_id=1581288241]
+script = ExtResource("1_36ov2")
